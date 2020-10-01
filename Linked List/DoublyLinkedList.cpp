@@ -1,4 +1,4 @@
-// Circular Doubly Linked List is also similar to Dounly Linked List Only differnnce is Last node next is pointing to first node and first node previous is pointing to last node so IN ORDER TO REACH LAST NODE YOU DONT NEED TO TRAVERSE ALL NODES jiust tpe the code head->prev
+// Circular Doubly Linked List is also similar to Doubly Linked List Only differnnce is that Last node next is pointing to first node and first node previous is pointing to last node so IN ORDER TO REACH LAST NODE YOU DONT NEED TO TRAVERSE ALL NODES jiust tpe the code head->prev
 #include<iostream>
 using namespace std;
 struct Node
@@ -111,7 +111,7 @@ void deleteNode()
 			p1=p1->next;
 		}
 		p2->next=p1->next;
-		if(p1->next!=NULL)	// COndition for last node that next node is NULL or NOT
+		if(p1->next!=NULL)	// Condition for last node that next node is NULL or NOT
 		p1->next->prev=p2;
 	}
 }
